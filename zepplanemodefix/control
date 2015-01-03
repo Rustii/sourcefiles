@@ -1,0 +1,9 @@
+Package: com.Rustii.zepplanemodefix
+Name: ZepPlaneModeFix
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Make zeppelin work in airplane mode… flipswitch for airplane mode doesn’t work with this enabled!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Tweaks

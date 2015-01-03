@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = secondstonone;
+	cell = PSLinkCell;
+	detail = secondstononeListController;
+	icon = secondstonone.png;
+	isController = 1;
+	label = secondstonone;
+    };
+}

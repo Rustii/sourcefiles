@@ -1,0 +1,9 @@
+Package: com.Rustii.cydiatimeout5
+Name: cydia timeout 5
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: makes bad repos timeout at 5 seconds.
+conflicts: com.chickenmatt5.cydiatimeout2, com.chickenmatt5.cydiatimeout5, com.chickenmatt5.cydiatimeout20
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: System

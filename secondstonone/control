@@ -1,0 +1,9 @@
+Package: com.Rustii.secondstonone
+Name: secondstonone
+Depends: firmware (>= 7.0), mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: thanks magn2o for the help,his tweak!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Tweaks (Legacy)

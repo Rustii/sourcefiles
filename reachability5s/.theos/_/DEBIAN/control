@@ -1,0 +1,11 @@
+Package: com.Rustii.reachability5s
+Name: Reachability 5S
+conflicts: com.w00tylab.virtualhome8
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Brings reachability to iPhone 5S and gives you some simple options.
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Tweaks
+Version: 0.0.1-3
+Installed-Size: 88

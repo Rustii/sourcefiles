@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = AnimatedClockOptions;
+	cell = PSLinkCell;
+	detail = AnimatedClockOptionsListController;
+	icon = AnimatedClockOptions.png;
+	isController = 1;
+	label = AnimatedClockOptions;
+    };
+}
