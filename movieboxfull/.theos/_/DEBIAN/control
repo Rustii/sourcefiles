@@ -1,10 +1,10 @@
 Package: com.Rustii.movieboxfull
 Name: MovieBoxFull
-Depends: mobilesubstrate
+Depends: firmware (>= 7.0), mobilesubstrate
 Architecture: iphoneos-arm
 Description: Moviebox3 features fully unlocked. Enjoy
 Maintainer: Rustii <christophersmall2013@gmail.com>
 Author: Rustii <christophersmall2013@gmail.com>
 Section: Apps
-Version: 0.0.1-11
+Version: 0.0.1-20
 Installed-Size: 88

@@ -16,6 +16,8 @@
 
 -(BOOL) turboModeEnabled {
     
+  //  NSLog(@"im guessing this works, ;)");
+    
     return TRUE;
     
     return %orig;
@@ -28,18 +30,10 @@
 // Try and deal with ads here
 
 %hook AdsManager
-
-/*
--(BOOL) searchTermIsGodsMercy:(id)arg1 {
-    
-    return TRUE;
-    
-    return %orig(arg1);
-
-}
-*/
  
 -(BOOL) adsRemovedPermanetly {
+    
+ //   NSLog(@"check ads removed perm");
 
     return TRUE;
     
@@ -48,6 +42,8 @@
 }
 
 -(BOOL) adsTemporaryRemoved {
+    
+  //  NSLog(@"we want to check ads removed temp");
     
     return TRUE;
     
@@ -61,6 +57,8 @@
 %hook AdsPlaceholderView
 
 -(id)initWithFrame:(CGRect)arg1 {
+    
+  //  NSLog(@"ads placeholder loaded here");
 
     id ret = %orig(arg1);
     
@@ -78,6 +76,8 @@
 %hook ASIHTTPRequest
 
 +(BOOL) isBandwidthThrottled {
+    
+  //  NSLog(@"is bandwidth throttled check");
 
     return FALSE;
     
@@ -86,6 +86,8 @@
 }
 
 +(void) setShouldThrottleBandwidthForWWAN:(BOOL)arg1 {
+    
+   // NSLog(@"should set WWAN bandwidth check");
 
     arg1 = FALSE;
     
@@ -101,6 +103,10 @@
 %hook FlurryImpl
 
 -(BOOL) isBackgroundSupported {
+    
+  //  %log;
+    
+  //  NSLog(@"Checking support here");
 
     return TRUE;
     
@@ -113,11 +119,31 @@
 %hook FlurryGlobalVariableStorage
 
 -(BOOL) backgroundSessionEnabled {
+    
+  //  %log;
+    
+  //  NSLog(@"checking if its enabled");
 
     return TRUE;
     
     return %orig;
 
+}
+
+%end
+
+// stop the next video playing, this is the start of the settings panel
+
+%hook VideoPlayerViewController
+
+-(void) setCanPlayNextVideo:(BOOL)arg1 {
+    
+  //  %log;
+
+  //  NSLog(@"we will just log this now");
+
+    return %orig;
+    
 }
 
 %end
