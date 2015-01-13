@@ -39,7 +39,7 @@ BOOL STNEnabled;
         arg1 = FALSE;
         %orig(arg1);
     
-    }else{
+    } else {
         
         %orig(arg1);
         
@@ -56,7 +56,7 @@ BOOL STNEnabled;
         arg1 = TRUE;
         %orig(arg1);
         
-    }else{
+    } else {
         
         %orig(arg1);
         
@@ -76,7 +76,7 @@ BOOL STNEnabled;
         arg1 = NULL;
         %orig(arg1);
     
-    }else{
+    } else {
         
         %orig(arg1);
         
@@ -88,7 +88,7 @@ BOOL STNEnabled;
     
   //  %log;
     
-    if (STNEnabled == TRUE) {
+    if (STNEnabled) {
         id ret = %orig;
 
         CALayer *seconds = MSHookIvar<CALayer *>(self, "_seconds");
