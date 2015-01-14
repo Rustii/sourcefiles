@@ -2,8 +2,7 @@ Package: com.rustii.cydianogpgerror
 Name: Cydia No GPG Error
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: Stops github repo's giving you a GPG error, if you uninstall it will remove the file.
-conflicts: 
+Description: Stops github repo's giving you a GPG error, if you uninstall it will remove the file. 
 Maintainer: Rustii <christophersmall2013@gmail.com>
 Author: Rustii <christophersmall2013@gmail.com>
 Section: System
