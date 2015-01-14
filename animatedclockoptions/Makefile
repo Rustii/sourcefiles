@@ -3,7 +3,7 @@ include theos/makefiles/common.mk
 TARGET := iphone:clang
 ARCHS = armv7 armv7s arm64
 TWEAK_NAME = animatedclockoptions
-secondstonone_FRAMEWORKS = QuartzCore UIKit
+animatedclockoptions_FRAMEWORKS = QuartzCore UIKit
 animatedclockoptions_FILES = Tweak.xm
 export DEBUG=1
 

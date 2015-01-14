@@ -3,7 +3,7 @@ include theos/makefiles/common.mk
 BUNDLE_NAME = AnimatedClockOptions
 AnimatedClockOptions_FILES = AnimatedClockOptions.mm
 AnimatedClockOptions_INSTALL_PATH = /Library/PreferenceBundles
-secondstonone_FRAMEWORKS = UIKit QuartzCore
+AnimatedClockOptions_FRAMEWORKS = UIKit QuartzCore
 AnimatedClockOptions_PRIVATE_FRAMEWORKS = Preferences
 
 include $(THEOS_MAKE_PATH)/bundle.mk

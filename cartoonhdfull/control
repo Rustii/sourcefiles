@@ -1,0 +1,9 @@
+Package: com.rustii.cartoonhdfull
+Name: CartoonHDFull
+Depends: firmware (>= 7.0), mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: a better experience for cartoon HD Pro!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Apps
