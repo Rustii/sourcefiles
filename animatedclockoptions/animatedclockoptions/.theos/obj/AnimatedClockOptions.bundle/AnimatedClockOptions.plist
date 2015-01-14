@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>No Clock Animation</string>
+		</dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.Rustii.animatedclockoptions~prefs</string>
+            <key>key</key>              <string>DCAEnabled</string>
+            <key>label</key>            <string>Enabled</string>
+            <key>PostNotification</key> <string>com.Rustii.animatedclockoptions~prefs/settingschanged</string>
+        </dict>
+        <dict>
+		<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+			<key>footerText</key>
+			<string>On IOS 7 the clock updates after swiping pages and leaving an app,IOS 8 only updates after leaving an app</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Disable Clock completely</string>
+		</dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <false/>
+            <key>defaults</key>         <string>com.Rustii.animatedclockoptions~prefs</string>
+            <key>key</key>              <string>FDCEnabled</string>
+            <key>label</key>            <string>Enabled</string>
+            <key>PostNotification</key> <string>com.Rustii.animatedclockoptions~prefs/settingschanged</string>
+        </dict>
+        		<dict>
+		<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+			<key>footerText</key>
+			<string>No Clock Animation must be Enabled for Disable Clock completely to work on IOS 8. this option makes the clock stay at 12</string>
+		</dict>
+		<dict>
+		<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Instructions</string>
+			<key>footerText</key>
+			<string>You need to exit the settings app with the home button for changes to take effect</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Seconds To None</string>
+		</dict>
+        <dict>
+            <key>cell</key>             <string>PSSwitchCell</string>
+            <key>default</key>          <true/>
+            <key>defaults</key>         <string>com.Rustii.animatedclockoptions~prefs</string>
+            <key>key</key>              <string>STNEnabled</string>
+            <key>label</key>            <string>Enabled</string>
+            <key>PostNotification</key> <string>com.Rustii.animatedclockoptions~prefs/settingschanged</string>
+        </dict>
+        <dict>
+		<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+			<key>footerText</key>
+			<string>Removes the second(little red one)hand from the live clock</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>AnimatedClockOptions</string>
+</dict>
+</plist>

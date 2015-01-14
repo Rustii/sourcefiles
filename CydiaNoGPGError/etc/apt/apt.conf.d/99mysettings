@@ -1,3 +1,1 @@
-//APT::Get::AllowUnauthenticated "true";
-// Uncomment to disable GPG-signature checking for packages
-GPG-Check “false”;
+APT::Get::AllowUnauthenticated "true";

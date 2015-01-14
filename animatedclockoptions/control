@@ -1,0 +1,10 @@
+Package: com.Rustii.animatedclockoptions
+Name: animatedclockoptions
+Depends: firmware (>= 7.0), mobilesubstrate
+Conflicts: com.Rustii.secondstonone 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: just some options for the live clock!Replaces SecondsToNone!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Tweaks
