@@ -1,0 +1,10 @@
+Package: com.rustii.slackerhb
+Name: SlackerHB
+Depends: firmware (>= 7.0), mobilesubstrate
+Architecture: iphoneos-arm
+Description: DO NOT INSTALL this makes your home button stop working. like really!!!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Personal
+Version: 0.0.1-10
+Installed-Size: 88
