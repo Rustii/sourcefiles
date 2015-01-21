@@ -51,7 +51,7 @@ BOOL STNEnabled;
     
  //   %log;
     
-    if (DCAEnabled) {
+    if (FDCEnabled) {
         
         arg1 = TRUE;
         %orig(arg1);
@@ -89,13 +89,13 @@ BOOL STNEnabled;
   //  %log;
     
     if (STNEnabled) {
-        id ret = %orig;
+      //  id ret = %orig;
 
         CALayer *seconds = MSHookIvar<CALayer *>(self, "_seconds");
         
         [seconds removeFromSuperlayer];
         
-        return ret;
+      //  return ret;
         
     }
     
