@@ -1,0 +1,9 @@
+Package: com.rustii.ufctvfull
+Name: ufctvfull
+Depends: firmware (>= 7.0), mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Apps
