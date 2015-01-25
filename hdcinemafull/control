@@ -1,0 +1,9 @@
+Package: com.rustii.hdcinemafull
+Name: HD Cinema Full
+Depends: firmware (>= 7.0), mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A fuller experience in HD Cinema!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Apps
