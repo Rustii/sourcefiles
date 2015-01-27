@@ -17,9 +17,6 @@
     
 }
 
-%end
-
-
 
 - (BOOL)hasAccessToVodSubscription {
     
@@ -77,12 +74,13 @@
 
 %end
 
+// im dealing with the blackout here.
 
-%hook V5ProgramDetailsItem;
+%hook UFCProgramDetailsItem;
 
 - (void)setBlackoutNode:(id)arg1 {
     
-    arg1 = NIL;
+    arg1 = NULL;
     return %orig(arg1);
 }
 
@@ -92,7 +90,7 @@
     return %orig;
 }
 
-
+%end
 
 // Deal with jailbreak Checks HERE VVVVV
 
