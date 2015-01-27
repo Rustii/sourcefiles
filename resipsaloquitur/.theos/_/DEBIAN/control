@@ -1,0 +1,10 @@
+Package: com.rustii.res-ipsa-loquitur
+Name: Res-Ipsa-Loquitur
+Depends: firmware (>= 8.0), mobilesubstrate
+Architecture: iphoneos-arm
+Description: No Shutter sound on IOS 8!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Tweaks
+Version: 0.0.1-2
+Installed-Size: 88
