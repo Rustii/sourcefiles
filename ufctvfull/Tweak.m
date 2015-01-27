@@ -5,6 +5,7 @@
 //
 //  Copyright (c) 2014 Rustii. All rights reserved.
 //
+#include <QuartzCore/CALayer.h>
 
 // Deal with sub/vip HERE VVVVV
 
@@ -122,6 +123,22 @@
 
     arg1 = NULL;
     return %orig(arg1);
+}
+
+%end
+
+// Deal with the banner here 
+
+%hook GADBannerView
+
+-(id)initWithFrame:(CGRect)arg1 {
+
+    id ret = %orig(arg1);
+    
+    return NULL;
+    
+    return ret;
+
 }
 
 %end
