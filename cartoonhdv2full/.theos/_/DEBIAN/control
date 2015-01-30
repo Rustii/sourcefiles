@@ -1,0 +1,10 @@
+Package: com.rustii.cartoonhdv2full
+Name: CartoonHDv2Full
+Depends: firmware (>= 7.0), mobilesubstrate
+Architecture: iphoneos-arm
+Description: a better experience for cartoon HD V2!
+Maintainer: Rustii <christophersmall2013@gmail.com>
+Author: Rustii <christophersmall2013@gmail.com>
+Section: Apps
+Version: 0.0.1-1
+Installed-Size: 88
