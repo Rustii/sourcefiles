@@ -5,21 +5,22 @@
 //
 //  Copyright (c) 2014 Rustii. All rights reserved.
 //
-#include <QuartzCore/CALayer.h>
 
-// Deal with sub/vip HERE VVVVV
 
-%hook NLAccountItem
+%hook UFCAccessControlManager
 
-- (void)setIsVIPUser:(BOOL)arg1 {
-
-    arg1 = TRUE;
-    return %orig(arg1);
+- (BOOL)hasAccessToEvent:(id)arg1 {
     
+    return TRUE;  
+ //   id ret = %orig;
+    
+ //   return ret;
+
+    return %orig(arg1);
 }
 
 
-- (BOOL)hasAccessToVodSubscription {
+- (BOOL)hasAccessToFightPassSubscription {
     
     return TRUE;
     return %orig;
@@ -27,15 +28,9 @@
 
 %end
 
-%hook MKStoreManager
+%hook UFCIAPAccessControl
 
-+ (BOOL)isFightPassSubscriptionPurchased {
-    
-    return TRUE;
-    return %orig;
-}
-
-+ (BOOL)isVodSubscriptionPurchased {
++ (BOOL)isFightPassSubActive {
     
     return TRUE;
     return %orig;
@@ -43,102 +38,51 @@
 
 %end
 
-%hook NLUFCAccountItem
+%hook NLSBlackoutInfo
 
-- (void)setIsFightPassSubscriber:(BOOL)arg1 {
-    
-    arg1 = TRUE;
-    return %orig(arg1);
-}
+- (BOOL)isDeny {
 
-
-- (BOOL)isFightPassSubscriber {
-    
-    return TRUE;
-    return %orig;
-}
-
-
-- (void)setIsVodSubscriber:(BOOL)arg1 {
-    
-    arg1 = TRUE;
-    return %orig(arg1);
-}
-
-
-- (BOOL)isVodSubscriber {
-    
-    return TRUE;
-    return %orig;
-}
-
-
-%end
-
-// im dealing with the blackout here.
-
-%hook UFCProgramDetailsItem;
-
-- (void)setBlackoutNode:(id)arg1 {
-    
-    arg1 = NULL;
-    return %orig(arg1);
-}
-
-- (BOOL)canBuyViaFightPassSub {
-    
-    return TRUE;
-    return %orig;
-}
-
-%end
-
-// Deal with jailbreak Checks HERE VVVVV
-
-%hook LocalyticsSession;
-
-- (BOOL)isDeviceJailbroken {
-    
     return FALSE;
     return %orig;
 }
 
 %end
 
-%hook GADDevice;
+%hook NLSLinearChannelResponse
 
-- (BOOL)isJailbroken {
+- (id)blackout {
     
-    return FALSE;
-    return %orig;
-}
-
-%end
-
-
-//seeing if i can force HQ
-%hook ConfigurationItem;
-
-- (void)setVideoQualityNormal:(id)arg1 {
-
-    arg1 = NULL;
-    return %orig(arg1);
-}
-
-%end
-
-// Deal with the banner here 
-
-%hook GADBannerView
-
--(id)initWithFrame:(CGRect)arg1 {
-
-    id ret = %orig(arg1);
+    id ret = %orig;
     
     return NULL;
     
     return ret;
+}
 
+%end
+
+%hook NLSLinearChannel
+
+- (id)blackout {
+    
+    id ret = %orig;
+    
+    return NULL;
+    
+    return ret;
+}
+
+%end
+
+%hook NLSProgram
+
+- (id)blackout {
+    
+    id ret = %orig;
+    
+    return NULL;
+    
+    return ret;
 }
 
 %end

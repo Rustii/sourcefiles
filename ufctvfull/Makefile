@@ -6,6 +6,8 @@ ARCHS = armv7 armv7s arm64
 ufctvfull_FILES = Tweak.xm
 ufctvfull_FRAMEWORKS = QuartzCore
 
+ufctvfull_LDFLAGS += -Wl,-segalign,4000
+
 include $(THEOS_MAKE_PATH)/tweak.mk
 
 after-install::
